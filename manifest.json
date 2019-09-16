@@ -1,0 +1,38 @@
+ {
+    "name": "Bee Movie Script",
+    "version": "1.0",
+    "description": "Every time there's a 'bee' on the webpage, link to the Bee Movie script.",
+    // "browser_action" : {
+
+    // },
+    // "permissions": ["storage", "declarativeContent","activeTab"],
+    // "background": {
+    //   "scripts": ["background.js"],
+    //   "persistent": false
+    // },
+    // "page_action": {
+    //   "default_popup": "popup.html"
+    //   // "default_icon": {
+    //   //   "16": "images/get_started16.png",
+    //   //   "32": "images/get_started32.png",
+    //   //   "48": "images/get_started48.png",
+    //   //   "128": "images/get_started128.png"
+    //   // }
+    // },
+    // "icons": {
+    //   "16": "images/get_started16.png",
+    //   "32": "images/get_started32.png",
+    //   "48": "images/get_started48.png",
+    //   "128": "images/get_started128.png"
+    // },
+    "content_scripts": [
+	    {
+	    "matches": ["*://*/*"],
+	    // "exclude_matches": ["*.google.com"],
+	    "js": ["content.js"],
+	    "run_at":"document_end"
+
+	  	}
+	],
+    "manifest_version": 2
+  }
