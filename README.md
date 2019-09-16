@@ -1,3 +1,5 @@
+# Bee Movie Chrome Extension
+
 ## Instructions For Use
 1. Download and unzip the project
 2. Visit [chrome://extensions/](chrome://extensions/)
